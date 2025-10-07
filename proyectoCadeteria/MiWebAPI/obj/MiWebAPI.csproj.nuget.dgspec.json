@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Judith Canivares\\Desktop\\Taller2\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj": {}
+    "C:\\Users\\enzon\\Desktop\\Parcial2Taller\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Judith Canivares\\Desktop\\Taller2\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj": {
+    "C:\\Users\\enzon\\Desktop\\Parcial2Taller\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Judith Canivares\\Desktop\\Taller2\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\enzon\\Desktop\\Parcial2Taller\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj",
         "projectName": "MiWebAPI",
-        "projectPath": "C:\\Users\\Judith Canivares\\Desktop\\Taller2\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj",
-        "packagesPath": "C:\\Users\\Judith Canivares\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Judith Canivares\\Desktop\\Taller2\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\obj\\",
+        "projectPath": "C:\\Users\\enzon\\Desktop\\Parcial2Taller\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\MiWebAPI.csproj",
+        "packagesPath": "C:\\Users\\enzon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enzon\\Desktop\\Parcial2Taller\\tl2-tp4-2025-Nicolas-Canivares\\proyectoCadeteria\\MiWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Judith Canivares\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\enzon\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

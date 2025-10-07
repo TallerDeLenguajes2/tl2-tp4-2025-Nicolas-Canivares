@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 101,
+    "Nombre": "Carla",
+    "Apellido": "Gómez",
+    "Direccion": "San Martín 500",
+    "Telefono": 3815550001
+  },
+  {
+    "Id": 102,
+    "Nombre": "Juan",
+    "Apellido": "Pérez",
+    "Direccion": "Balcarce 200",
+    "Telefono": 3815550002
+  },
+  {
+    "Id": 103,
+    "Nombre": "Luis",
+    "Apellido": "Luna",
+    "Direccion": "Sarmiento 350",
+    "Telefono": 3815550003
+  },
+  {
+    "Id": 104,
+    "Nombre": "Micaela",
+    "Apellido": "Rodríguez",
+    "Direccion": "Rivadavia 1200",
+    "Telefono": 3815550004
+  },
+  {
+    "Id": 105,
+    "Nombre": "Tomás",
+    "Apellido": "Villalba",
+    "Direccion": "25 de Mayo 100",
+    "Telefono": 3815550005
+  }
+]

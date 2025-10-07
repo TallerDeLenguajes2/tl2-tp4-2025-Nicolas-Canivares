@@ -1,0 +1,85 @@
+{
+  "Nombre": "Cadetería Killa",
+  "Direccion": "25 de Mayo 100, San Miguel de Tucumán",
+  "Telefono": 3815550000,
+  "Titular": "Nicolás Canivares",
+  "ListadoCadetes": [
+    {
+      "Id": 101,
+      "Nombre": "Carla",
+      "Apellido": "Gómez",
+      "Direccion": "San Martín 500",
+      "Telefono": 3815550001
+    },
+    {
+      "Id": 102,
+      "Nombre": "Juan",
+      "Apellido": "Pérez",
+      "Direccion": "Balcarce 200",
+      "Telefono": 3815550002
+    },
+    {
+      "Id": 103,
+      "Nombre": "Luis",
+      "Apellido": "Luna",
+      "Direccion": "Sarmiento 350",
+      "Telefono": 3815550003
+    }
+  ],
+  "ListadoPedidos": [
+    {
+      "Nro": 1,
+      "Obs": "Sin sal en la comida",
+      "Cliente": {
+        "Nombre": "Nico",
+        "Direccion": "Av. Siempre Viva 742",
+        "Telefono": 3815551234,
+        "DatosReferenciaDireccion": "Casa con portón verde"
+      },
+      "Estado": 1,
+      "Cadete": {
+        "Id": 101,
+        "Nombre": "Carla",
+        "Apellido": "Gómez",
+        "Direccion": "San Martín 500",
+        "Telefono": 3815550001
+      }
+    },
+    {
+      "Nro": 2,
+      "Obs": "Entregar en portería",
+      "Cliente": {
+        "Nombre": "Agustín",
+        "Direccion": "25 de Mayo 100",
+        "Telefono": 3815552222,
+        "DatosReferenciaDireccion": "Torre B, dpto 3A"
+      },
+      "Estado": 2,
+      "Cadete": {
+        "Id": 102,
+        "Nombre": "Juan",
+        "Apellido": "Pérez",
+        "Direccion": "Balcarce 200",
+        "Telefono": 3815550002
+      }
+    },
+    {
+      "Nro": 3,
+      "Obs": "Llamar al llegar",
+      "Cliente": {
+        "Nombre": "María",
+        "Direccion": "Laplace 123",
+        "Telefono": 3815553333,
+        "DatosReferenciaDireccion": "Frente a la plaza"
+      },
+      "Estado": 3,
+      "Cadete": {
+        "Id": 103,
+        "Nombre": "Luis",
+        "Apellido": "Luna",
+        "Direccion": "Sarmiento 350",
+        "Telefono": 3815550003
+      }
+    }
+  ]
+}
