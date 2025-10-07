@@ -21,6 +21,13 @@ namespace EspacioCadeteria
         public string Direccion { get => direccion; set => direccion = value; }
         public ulong Telefono { get => telefono; set => telefono = value; }
         public string Titular { get => titular; set => titular = value; }
+        public List<Cadete> ListadoCadetes { get => listadoCadetes; set => listadoCadetes = value; }
+        public List<Pedido> ListadoPedidos { get => listadoPedidos; set => listadoPedidos = value; }
+
+        public Cadeteria()
+        {
+            
+        }
 
         public Cadeteria(string nombre, string direccion, ulong telefono, string titular)
         {
@@ -28,8 +35,8 @@ namespace EspacioCadeteria
             this.direccion = direccion;
             this.telefono = telefono;
             this.titular = titular;
-            listadoCadetes = new List<Cadete>();
-            listadoPedidos = new List<Pedido>();
+            ListadoCadetes = new List<Cadete>();
+            ListadoPedidos = new List<Pedido>();
         }
 
         public static Cadeteria CargarCadeteriaCSV(string archivo)
@@ -51,17 +58,17 @@ namespace EspacioCadeteria
         public void DarDeAltaCadete(int id, string nombre, string apellido, string direccion, ulong telefono)
         {
             Cadete nuevoCadete = new Cadete(id, nombre, apellido, direccion, telefono);
-            listadoCadetes.Add(nuevoCadete);
+            ListadoCadetes.Add(nuevoCadete);
         }
 
 
         public List<Cadete> DarDeBajaCadete(int id)
         {
-            if (listadoCadetes.Any())
+            if (ListadoCadetes.Any())
             {
-                listadoCadetes.Remove(listadoCadetes.Find(c => c.Id == id));
+                ListadoCadetes.Remove(ListadoCadetes.Find(c => c.Id == id));
             }
-            return listadoCadetes;
+            return ListadoCadetes;
 
         }
 
@@ -75,12 +82,12 @@ namespace EspacioCadeteria
             //     Console.WriteLine($"Teléfono: {cadete.Telefono}");
             //     Console.WriteLine($"Dirección: {cadete.Direccion}");
             // }
-            return listadoCadetes;
+            return ListadoCadetes;
         }
 
         public bool ExistePedido(int idPedido)
         {
-            if (listadoPedidos.Any(p => p.Nro == idPedido))
+            if (ListadoPedidos.Any(p => p.Nro == idPedido))
             {
                 return true;
             }
@@ -92,7 +99,7 @@ namespace EspacioCadeteria
 
         public bool ExisteCadete(int idCadete)
         {
-            if (listadoCadetes.Any(c => c.Id == idCadete))
+            if (ListadoCadetes.Any(c => c.Id == idCadete))
             {
                 return true;
             }
@@ -104,26 +111,26 @@ namespace EspacioCadeteria
 
         public List<Pedido> DarDeAltaPedido(Pedido pedido)
         {
-            listadoPedidos.Add(pedido);
-            return listadoPedidos;
+            ListadoPedidos.Add(pedido);
+            return ListadoPedidos;
         }
 
         public List<Pedido> DarDeBajaPedido(int nroDePedido)
         {
-            if (listadoPedidos.Any())
+            if (ListadoPedidos.Any())
             {
-                listadoPedidos.RemoveAll(p => p.Nro == nroDePedido);
+                ListadoPedidos.RemoveAll(p => p.Nro == nroDePedido);
             }
 
-            return listadoPedidos;
+            return ListadoPedidos;
         }
 
         public bool AsignarCadeteAPedido(int idPedido, int idCadete)
         {
             if (ExistePedido(idPedido) && ExisteCadete(idCadete))
             {
-                Pedido pedido = listadoPedidos.First(p => p.Nro == idPedido);
-                Cadete cadete = listadoCadetes.First(c => c.Id == idCadete);
+                Pedido pedido = ListadoPedidos.First(p => p.Nro == idPedido);
+                Cadete cadete = ListadoCadetes.First(c => c.Id == idCadete);
                 pedido.Cadete = cadete;
                 return true;
             }
@@ -137,8 +144,8 @@ namespace EspacioCadeteria
         {
             if (ExistePedido(idPedido) && ExisteCadete(idCadete))
             {
-                Pedido pedido = listadoPedidos.First(p => p.Nro == idPedido);
-                Cadete cadete = listadoCadetes.First(c => c.Id == idCadete);
+                Pedido pedido = ListadoPedidos.First(p => p.Nro == idPedido);
+                Cadete cadete = ListadoCadetes.First(c => c.Id == idCadete);
                 pedido.Cadete = cadete;
                 return true;
             }
@@ -150,9 +157,9 @@ namespace EspacioCadeteria
 
         public float JornalACobrar(int idCadete)
         {
-            if (listadoCadetes.Any(c => c.Id == idCadete))
+            if (ListadoCadetes.Any(c => c.Id == idCadete))
             {
-                return 500 * listadoPedidos.Count(p => p.Cadete.Id == idCadete);
+                return 500 * ListadoPedidos.Count(p => p.Cadete.Id == idCadete);
             }
             else
             {

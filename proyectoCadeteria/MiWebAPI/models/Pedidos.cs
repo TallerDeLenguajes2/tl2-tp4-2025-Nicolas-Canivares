@@ -27,6 +27,11 @@ namespace EspacioPedido
         public EnumEstado Estado { get => estado; set => estado = value; }
         public Cadete Cadete { get => cadete; set => cadete = value; }
 
+        public Pedido()
+        {
+
+        }
+
         public Pedido(int nro, string obs, EnumEstado estado, string nombre, string direccion, ulong telefono, string datosReferenciaDireccion)
         {
             this.nro = nro;

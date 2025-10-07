@@ -18,6 +18,11 @@ namespace EspacioCadete
         public string Direccion { get => direccion; set => direccion = value; }
         public ulong Telefono { get => telefono; set => telefono = value; }
 
+        public Cadete()
+        {
+            
+        }
+
         public Cadete(int id, string nombre, string apellido, string direccion, ulong telefono)
         {
             this.id = id;

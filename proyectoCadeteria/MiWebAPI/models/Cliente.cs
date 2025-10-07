@@ -9,6 +9,11 @@ namespace EspacioCliente
         private ulong telefono;
         private string datosReferenciaDireccion;
 
+        public Cliente()
+        {
+            
+            
+        }
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Direccion { get => direccion; set => direccion = value; }       
